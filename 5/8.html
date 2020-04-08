@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <title>Конструкция for in</title>
+    <title>8.Конструкция for in</title>
 
     <script type="text/javascript">
-    //Перебор значений 
       var house = {
         roof: "<img src= 'Images_LR7/Roof.gif'/><br/>",
         secondFloor: "<img src= 'Images_LR7/SecondFloor.gif'/><br/>",
@@ -20,10 +19,10 @@
       }
       //цикл for/in не проходит по всем элементам массива(свойствам объекта), а перебирает перечисленные
       var arr = [];
-      var _ind=0;
+      var _ind = 0;
       arr[0] = true;
       arr[4] = 1;
-      arr[12] = "people";
+      arr[122] = "people";
       for (_ind in arr) {
         arr[3] = false; // созданный элемент массива в цикле for/in не всегда отобразиться самим циклом
         console.log(_ind);

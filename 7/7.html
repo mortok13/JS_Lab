@@ -33,14 +33,14 @@
       />
       <INPUT TYPE="reset" VALUE="Сброс" />
       <script>
-          var Ok = "Ok"
-          var Problem = "Problem"
+          var Ok = "."
+          var Problem = "."
           function getDate(){ 
               var today = new Date();
               return today.toLocaleDateString() + "\n";
             }
           function CheckRadio(form, value) {
-                if (value == "Good") form.Letter.value = getDate() + Ok;
+                if (value = "Good") form.Letter.value = getDate() + Ok;
                 else form.Letter.value = getDate() + Problem;
             }
     </script>
