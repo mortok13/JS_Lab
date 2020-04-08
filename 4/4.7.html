@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Массив Аргументов arguments</title>
+
+    <script type="text/javascript">
+      function max(a, b, c) {
+        //функция показывает максимальное значение аргумента, котороый передан при вызове
+        console.log(arguments);
+        var maxValue = Number.NEGATIVE_INFINITY; //присваеваем изначально
+        //минус бесконечность
+        document.write("<p>Number.NEGATIVE_INFINITY = " + maxValue + "<hr/>");
+        //перебираем циклом аргументы
+        for (var i = 0;i < arguments.length;i++)
+          if (arguments[i] > maxValue) maxValue = arguments[i];
+
+        return maxValue;
+      }
+	  let num1,num2,num3,num4,num5,num6
+      var res = max(num1=prompt("1 number"), num2=prompt("2 number"), num3=prompt("3 number"), num4=prompt("4 number"), num5=prompt("5 number"), num6=prompt("6 number"));
+      document.write(
+        "<p>Максимальное значение одного из аргументов функции = " + res
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

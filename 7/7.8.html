@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Конструкция for in</title>
+
+    <script type="text/javascript">
+    //Перебор значений 
+      var house = {
+        roof: "<img src= 'Images_LR7/Roof.gif'/><br/>",
+        secondFloor: "<img src= 'Images_LR7/SecondFloor.gif'/><br/>",
+        firstFloor: "<img src='Images_LR7/FirstFloor.gif'/><br/>",
+        basement: "<img src= 'Images_LR7/Basement.gif'/><br/>",
+        address: "<p style='color:green'>UK. London. Muswell Hill. N10<hr/>"
+      };
+
+      // Перебор значений свойств в обьекте - house
+      for (var element in house) {
+        // создание той переменной, которая будет перебирать свойства в объекте house
+        document.write(house[element]); //выводим на екран переменную которая перебирала свойство
+      }
+      //цикл for/in не проходит по всем элементам массива(свойствам объекта), а перебирает перечисленные
+      var arr = [];
+      var _ind=0;
+      arr[0] = true;
+      arr[4] = 1;
+      arr[12] = "people";
+      for (_ind in arr) {
+        arr[3] = false; // созданный элемент массива в цикле for/in не всегда отобразиться самим циклом
+        console.log(_ind);
+      }
+      console.log(arr);
+      document.write(arr);
+    </script>
+
+</head>
+<body>
+</body>
+</html>
